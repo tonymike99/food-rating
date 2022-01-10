@@ -52,9 +52,9 @@ const cuisineArray = Object.keys(foodDictionary);
 export default function App() {
     const [userClick, setUserClick] = useState('Italian');
 
-    function foodCuisineClickHandler(cuisine) {
+    const foodCuisineClickHandler = (cuisine) => {
         setUserClick(cuisine);
-    }
+    };
 
     return (
         <div className='App'>
